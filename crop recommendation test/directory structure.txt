@@ -1,0 +1,21 @@
+project/
+│
+├── data/
+│   ├── cleaned_data.csv          # Original cleaned soil/climate dataset
+│   ├── soil_with_crops_1.csv     # Dataset after applying crop rules
+│
+├── models/
+│   ├── crop_model.pkl            # Trained Random Forest model
+│   ├── label_encoder.pkl         # Label encoder for crops
+│
+├── scripts/
+│   ├── crop_rules.py             # All 60+ crop rules
+│   ├── crop_recommender.py       # Script to apply rules and generate crops
+│   ├── train_model.py            # Training script (ML model)
+│   └── evaluate_model.py         # Optional evaluation/testing script
+│
+├── app/
+│   ├── app.py                    # Flask or Streamlit app (future)
+│   └── templates/                # HTML templates (if Flask)
+│
+└── README.md
